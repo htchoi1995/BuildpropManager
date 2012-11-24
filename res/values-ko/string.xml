@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">빌드프롭 매니저</string>
+    <string name="add_prop">빌드프롭추가</string>
+    <string name="save">저장</string>
+    <string name="discart">삭제</string>
+    <string name="cancel">취소</string>
+    <string name="edit_key">빌드프롭 값</string>
+    <string name="edit_name">빌드프롭 제목</string>
+    <string name="edit_prop_title">빌드프롭 추가/수정</string>
+    <string name="unsaved_changes_title">저장하지 않은 변경 사항</string>
+    <string name="unsaved_changes_message">이 값을 설정하시겠습니까?</string>
+    <string name="add">추가</string>
+</resources>
