@@ -11,4 +11,7 @@
     <string name="unsaved_changes_title">저장하지 않은 변경 사항</string>
     <string name="unsaved_changes_message">이 값을 설정하시겠습니까?</string>
     <string name="add">추가</string>
+    <string name="brick_warning">루팅과 빌드프롭에 대해 잘 모른다면 아무것도 변경하지마십시오.\n이로인해 문제가 발생할경우 사용자책임입니다.</string>
+    <string name="dont_show">이 경고메시지를 다신 보여주지마세요.</string>
+    <string name="dialog_continue">계속</string>
 </resources>

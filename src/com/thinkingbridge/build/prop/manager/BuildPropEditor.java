@@ -11,6 +11,7 @@ import java.util.Map;
 import java.util.Properties;
 
 import android.app.ActionBar;
+import android.app.Dialog;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,8 +20,10 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
@@ -30,6 +33,28 @@ public class BuildPropEditor extends ListActivity {
     private String tempFile;
     private boolean refreshList;
 	private ActionBar actionBar;
+	
+	//처음실행될때 경고문이 나옴
+	
+		@Override
+		protected void onStart()
+		{
+		    super.onStart();
+
+		    final Dialog dialog = new Dialog(this);
+		    dialog.setContentView(R.layout.dialog);
+		    dialog.setTitle("Warning!");
+
+		    Button button = (Button) dialog.findViewById(R.id.okay);
+		    button.setOnClickListener(new OnClickListener() {  
+		        @Override  
+		        public void onClick(View view) {  
+		            dialog.dismiss();            
+		        }  
+		    });
+
+		    dialog.show();
+		}
 	
 	@Override
     public void onCreate(Bundle savedInstanceState) {

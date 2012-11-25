@@ -12,4 +12,7 @@
     <string name="unsaved_changes_message">Would you like to set this property?</string>
     <string name="add">Add</string>
     <string name="ok">OK</string>
+    <string name="brick_warning">If you don\'t know about root and build.prop? Do not change anything.\nWhen you have a problem is the responsibility of the user.</string>
+    <string name="dont_show">Don\'t show this warning message again.</string>
+    <string name="dialog_continue">Continue</string>
 </resources>

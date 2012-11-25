@@ -1,16 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="wrap_content" 
-                android:layout_height="wrap_content">
-  <TextView android:text="hello, world" 
-            android:id="@+id/TextView01"
-            android:layout_width="wrap_content" 
-            android:layout_height="wrap_content"/>
-  
-   <Button android:id="@+id/Button01" 
-           android:layout_below="@id/TextView01"
-           android:layout_width="wrap_content" 
-           android:layout_height="wrap_content"
-           android:layout_centerHorizontal="true" 
-           android:text="OK" />
-</RelativeLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+                
+  <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10.0dip" >
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/brick_warning"
+            android:textSize="15dp" />
+    </RelativeLayout>
+    
+  <CheckBox
+          android:id="@+id/dont_show"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/dont_show"
+          android:textSize="13dp" />
+    
+  <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+        
+      <Button
+            android:id="@+id/okay"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/dialog_continue" />
+
+   </LinearLayout>
+   
+</LinearLayout>

@@ -47,7 +47,7 @@ public class EditPropActivity extends Activity {
 	    dialog.setContentView(R.layout.dialog);
 	    dialog.setTitle("Warning!");
 
-	    Button button = (Button) dialog.findViewById(R.id.Button01);
+	    Button button = (Button) dialog.findViewById(R.id.okay);
 	    button.setOnClickListener(new OnClickListener() {  
 	        @Override  
 	        public void onClick(View view) {  
