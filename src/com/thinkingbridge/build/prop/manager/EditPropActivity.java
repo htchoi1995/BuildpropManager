@@ -13,16 +13,12 @@ import java.util.Properties;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import android.text.Editable;
@@ -36,27 +32,6 @@ public class EditPropActivity extends Activity {
 	private AlertDialog unsavedChangesDialog;
 	private String tempFile;
 	private String propReplaceFile;
-	
-	// 앱이 실행될때 주의하라고 알림
-	@Override
-	protected void onStart()
-	{
-	    super.onStart();
-
-	    final Dialog dialog = new Dialog(this);
-	    dialog.setContentView(R.layout.dialog);
-	    dialog.setTitle("Warning!");
-
-	    Button button = (Button) dialog.findViewById(R.id.okay);
-	    button.setOnClickListener(new OnClickListener() {  
-	        @Override  
-	        public void onClick(View view) {  
-	            dialog.dismiss();            
-	        }  
-	    });
-
-	    dialog.show();
-	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
